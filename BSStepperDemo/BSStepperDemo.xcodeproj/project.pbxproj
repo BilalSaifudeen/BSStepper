@@ -21,6 +21,7 @@
 		B808843E197F659B00E4BBF1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8088420197F659B00E4BBF1 /* UIKit.framework */; };
 		B8088446197F659B00E4BBF1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B8088444197F659B00E4BBF1 /* InfoPlist.strings */; };
 		B8088448197F659B00E4BBF1 /* BSStepperDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8088447197F659B00E4BBF1 /* BSStepperDemoTests.m */; };
+		B8088454197F69A200E4BBF1 /* BSStepper.m in Sources */ = {isa = PBXBuildFile; fileRef = B8088453197F69A200E4BBF1 /* BSStepper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		B8088443197F659B00E4BBF1 /* BSStepperDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BSStepperDemoTests-Info.plist"; sourceTree = "<group>"; };
 		B8088445197F659B00E4BBF1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B8088447197F659B00E4BBF1 /* BSStepperDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BSStepperDemoTests.m; sourceTree = "<group>"; };
+		B8088452197F69A200E4BBF1 /* BSStepper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSStepper.h; sourceTree = "<group>"; };
+		B8088453197F69A200E4BBF1 /* BSStepper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSStepper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +117,7 @@
 			children = (
 				B808842B197F659B00E4BBF1 /* BSAppDelegate.h */,
 				B808842C197F659B00E4BBF1 /* BSAppDelegate.m */,
+				B8088451197F698600E4BBF1 /* BSStepper */,
 				B808842E197F659B00E4BBF1 /* Main.storyboard */,
 				B8088431197F659B00E4BBF1 /* BSViewController.h */,
 				B8088432197F659B00E4BBF1 /* BSViewController.m */,
@@ -150,6 +154,15 @@
 				B8088444197F659B00E4BBF1 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B8088451197F698600E4BBF1 /* BSStepper */ = {
+			isa = PBXGroup;
+			children = (
+				B8088452197F69A200E4BBF1 /* BSStepper.h */,
+				B8088453197F69A200E4BBF1 /* BSStepper.m */,
+			);
+			path = BSStepper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +265,7 @@
 			files = (
 				B8088433197F659B00E4BBF1 /* BSViewController.m in Sources */,
 				B8088429197F659B00E4BBF1 /* main.m in Sources */,
+				B8088454197F69A200E4BBF1 /* BSStepper.m in Sources */,
 				B808842D197F659B00E4BBF1 /* BSAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

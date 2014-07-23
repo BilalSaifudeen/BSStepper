@@ -10,3 +10,5 @@
 *.xcuserstate
 
 BSStepperDemo/BSStepperDemo.xcodeproj/project.xcworkspace/xcuserdata/bilals.xcuserdatad/UserInterfaceState.xcuserstate
+
+*.xcbkptlist
