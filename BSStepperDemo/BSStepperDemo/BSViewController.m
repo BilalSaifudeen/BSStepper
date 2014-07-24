@@ -42,5 +42,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (IBAction)stepperValueChanged:(id)sender {
+    NSLog(@"Stepper value changed : %f",[(BSStepper *)sender value]);
+}
 
 @end

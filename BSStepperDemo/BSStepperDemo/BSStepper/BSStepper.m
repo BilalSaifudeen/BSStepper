@@ -176,6 +176,8 @@
     }else{
         self.value = self.maximumValue;
     }
+    
+    [self sendActionsForControlEvents:UIControlEventValueChanged];
 }
 
 - (void)downPressed:(id)sender{
@@ -185,6 +187,7 @@
         self.value = self.minimumValue;
     }
     
+    [self sendActionsForControlEvents:UIControlEventValueChanged];
 }
 
 @end
