@@ -34,6 +34,13 @@
  */
 @property(nonatomic, assign) double stepValue;
 
+
+/**
+ *  The possible value range from which minimumValue and maximumValue can be derived.
+ *  Default value is (0,100). Example: If you set range as (1, 9), minimumValue will be 1 and maximumValue will be 10.
+ */
+@property(nonatomic) NSRange range;
+
 /**
  *  The format string used to format the value when displayed in label. It must be a non-nil value.
  *  It will be used with NSString's stringWithFormat: method.

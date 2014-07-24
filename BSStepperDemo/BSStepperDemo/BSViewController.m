@@ -22,8 +22,7 @@
     //Create stepper programmatically
     BSStepper *stepper = [[BSStepper alloc] init];
     [stepper setTranslatesAutoresizingMaskIntoConstraints:NO];
-    [stepper setMinimumValue:10];
-    [stepper setMaximumValue:20];
+    [stepper setRange:NSMakeRange(10, 10)];
     [stepper setValue:15];
     [stepper setStepValue:0.5];
     [stepper setFormatString:@"%.02f"];

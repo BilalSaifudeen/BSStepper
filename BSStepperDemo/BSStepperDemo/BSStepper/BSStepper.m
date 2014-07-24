@@ -40,8 +40,7 @@
     self.formatString = @"%.0f";
     
     self.value = 1;
-    self.minimumValue = 0;
-    self.maximumValue = 100;
+    self.range = NSMakeRange(0, 100);
     self.stepValue = 1;
     
 
@@ -141,6 +140,15 @@
 
 - (void)setStepValue:(double)stepValue{
     _stepValue = stepValue;
+}
+
+- (void)setRange:(NSRange)range{
+    [self setMinimumValue:range.location];
+    [self setMaximumValue:range.location + range.length];
+}
+
+- (NSRange)range{
+    return NSMakeRange(_minimumValue, _maximumValue - _minimumValue);
 }
 
 - (void)setFormatString:(NSString *)formatString{
